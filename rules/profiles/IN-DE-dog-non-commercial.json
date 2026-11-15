@@ -1,0 +1,77 @@
+{
+  "profile_id": "IN-DE-dog-non-commercial",
+  "origin_country": "IN",
+  "destination_country": "DE",
+  "destination_group": "EU",
+  "pet_types": ["dog"],
+  "movement_type": "non_commercial",
+  "profile_status": "source_backed_prototype",
+  "last_reviewed": "2026-11-15",
+  "sources": [
+    {
+      "title": "European Commission - Bringing a pet into the EU from a non-EU country",
+      "url": "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/bringing-pet-eu-non-eu-country_en"
+    },
+    {
+      "title": "European Commission - Listing of territories and non-EU countries",
+      "url": "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/listing-territories-and-non-eu-countries_en"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "microchip",
+      "title": "Microchip identification",
+      "kind": "document_evidence",
+      "evidence": "microchip_id",
+      "instructions": "The pet must be identified by an implanted microchip. Confirm the chip can be read and that its number matches the travel documents."
+    },
+    {
+      "id": "rabies_vaccination",
+      "title": "Valid rabies vaccination",
+      "kind": "document_evidence",
+      "evidence": "rabies_vaccination",
+      "instructions": "The rabies vaccination must be valid. The microchip identification must precede the vaccination; primary vaccination timing rules also apply."
+    },
+    {
+      "id": "rabies_titration",
+      "title": "Rabies antibody titration test",
+      "kind": "document_evidence",
+      "evidence": "rabies_titration",
+      "instructions": "India is not in the European Commission's current list of countries exempt from this test. The sample must be collected at least 30 days after primary vaccination and at least 90 days before the animal health certificate is issued; the result must be at least 0.5 IU/ml and come from a designated laboratory. Verify the report and dates with the issuing veterinarian."
+    },
+    {
+      "id": "eu_animal_health_certificate",
+      "title": "EU animal health certificate",
+      "kind": "document_evidence",
+      "evidence": "eu_animal_health_certificate",
+      "instructions": "Obtain the required EU animal health certificate, completed by an official or authorised veterinarian and endorsed by the competent authority. It is generally valid for 10 days until entry checks."
+    },
+    {
+      "id": "non_commercial_declaration",
+      "title": "Non-commercial movement declaration",
+      "kind": "document_evidence",
+      "evidence": "non_commercial_declaration",
+      "instructions": "Complete the owner declaration confirming that the movement is non-commercial."
+    },
+    {
+      "id": "travellers_point_of_entry",
+      "title": "Use a designated travellers' point of entry",
+      "kind": "manual_action",
+      "evidence": null,
+      "instructions": "Plan entry through an EU-designated travellers' point of entry for the required documentary and identity checks. Confirm the current German entry location before booking."
+    },
+    {
+      "id": "fitness_to_travel",
+      "title": "Veterinary fitness to travel",
+      "kind": "manual_confirmation",
+      "evidence": null,
+      "instructions": "Have an authorised veterinarian confirm that the pet is healthy and fit to travel."
+    }
+  ],
+  "limitations": [
+    "This is a prototype profile for a private, non-commercial dog journey from India to Germany.",
+    "It does not cover commercial movement, ownership transfer, more than five pets, unusual transit routes, or all airline-specific requirements.",
+    "A detected document is not proof that the document is valid, authentic, complete, or accepted by authorities.",
+    "Always verify current requirements with the competent authority, veterinarian, and airline before travel."
+  ]
+}
