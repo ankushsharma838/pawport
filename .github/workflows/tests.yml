@@ -1,0 +1,27 @@
+name: PawPort tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test runner
+        run: python -m pip install --upgrade pytest
+      - name: Run parser, readiness and destination profile tests
+        run: >-
+          python -m pytest
+          ai/document_parser/test_parser.py
+          rules/test_travel_rules.py
+          rules/test_destination_requirements.py
+          ai/workflow/test_readiness.py
