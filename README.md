@@ -37,11 +37,14 @@ The compliance concept is designed around requirements across **190+ countries a
 PawPort is also a sandbox for exploring how AI can reduce operational effort in a workflow-heavy product:
 
 - **AI document parsing** — extract useful fields, dates and expiry information from pet/veterinary documents.
-- **Travel readiness** — turn structured requirements into a personalized preparation checklist.
+- **Document-to-readiness workflow** — connect parsed fields to deterministic readiness checks.
+- **Destination-specific checklist** — first source-backed prototype profile for a private, non-commercial dog journey from India to Germany.
 - **Rules + LLM workflows** — combine deterministic travel rules with AI-generated guidance instead of relying on an LLM for compliance decisions alone.
 - **Agent workflows** — explore where an AI agent can coordinate multi-step preparation without hiding important decisions from the user.
 
-> AI outputs are treated as assistance, not as the source of truth for regulatory or airline requirements.
+> AI outputs are treated as assistance, not as the source of truth for regulatory or airline requirements. A detected document is not proof of authenticity or regulatory acceptance.
+
+See [the destination requirements engine design](docs/destination-requirements-engine.md).
 
 ## Product thinking
 
@@ -58,15 +61,13 @@ The project is intentionally built as a product case study as much as a software
 
 PawPort is an independent prototype and product exploration. It has not been launched as an operating travel service.
 
-The next phase focuses on turning the prototype into a more structured AI/product engineering lab with documented experiments, tests, evaluation criteria and product analytics.
+The destination-specific requirements engine is an early prototype with one route profile. Requirements must be verified with competent authorities, veterinarians and airlines before real travel.
 
 ## Repository roadmap
 
-Planned areas of work:
-
 - `docs/` — product decisions, architecture and experiment notes
 - `ai/` — AI-assisted document and workflow experiments
-- `rules/` — travel eligibility and compliance logic
+- `rules/` — travel eligibility and destination-specific requirement profiles
 - `analytics/` — product events and funnel experiments
 - `tests/` — unit and workflow tests
 
